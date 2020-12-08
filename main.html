@@ -15,29 +15,121 @@
     />
   </head>
   <body>
-    <header>
-      <p>Adding some text here for navigation bar</p>
+    <header class="header">
+      <img src="images/icon.png" class="icon" />
+      <p>About us</p>
+      <p>Projects</p>
+      <p>Contact us</p>
     </header>
     <div class="hero-wrapper">
-      <video autoplay muted loop class="hero-wrapper-video">
+      <video autoplay muted loop id="hero-wrapper-video">
         <source
           src="images/pexels-rodnae-productions-5529389.mp4"
           type="video/mp4"
         />
       </video>
       <div class="hero-wrapper-text">
-        <h1>Game Tester Agency</h1>
+        <button onclick="window.location.href='#'" class="know-more">
+          <h1>Game Tester Agency</h1>
+        </button>
       </div>
       <div class="picturefrom">
-        <p>Video av Taryn Elliott från Pexels</p>
+        <p>Video by RODNAE Productions from Pexels</p>
       </div>
     </div>
-    <i class="fas fa-gamepad"></i>
+    <div class="background-middle">
+      <section class="grid">
+        <div class="starter-text">
+          <h2>Let us help you develop your game!</h2>
+          <button onclick="window.location.href='#'" class="know-more">
+            Book our Game testers
+          </button>
+          <p>
+            Do you have an idea for a new game, but need testers? You come to
+            the right place! Board games of all their sort, dice games, card
+            games, or digital games like FPS, MOBA, Tower defence - you name it!
+            Talk to us and we will help you with proper feedback and
+            documentation, so you can develop your idea and create that dream.
+            Stop bothering your friends and family, we will help you instead
+            with enthusiasm, excitement and engagement!
+          </p>
+        </div>
 
-    <h2>Quality gamer</h2>
-    <p>We have several gamers that are here for you.</p>
+        <div class="first-argument">
+          <h2><i class="fas fa-dice-d20"></i></h2>
+          <p>
+            We don't care what type of game you have created. Is it an
+            easy-peasy game that takes about 10 minutes to finish? Is it an 4
+            hour long sessions including complicated classes, dices or just
+            rules that you really need to keep track on? Doesn't matter to us!
+          </p>
+        </div>
+        <div class="second-argument">
+          <h2><i class="fas fa-users"></i></h2>
+          <p>
+            Our testers age are ranging from 3 years old up to 80 years, so we
+            have some one for you! Our testers feel that they can never be to
+            young or to old for playing games, it's all a mindset.
+          </p>
+        </div>
+        <div class="third-argument">
+          <h2><i class="fas fa-hat-wizard"></i></h2>
+          <p>
+            Are your targeting gaming wizards that are use to playing alot of
+            games? Or do your want to see how complete newbies in gaming would
+            play your games? Don't your worry about that, we got you!
+          </p>
+        </div>
+        <div class="forth-argument">
+          <h2><i class="fas fa-video"></i></h2>
+          <p>
+            The test will be well documented. We will make sure that you get all
+            the documentation you need, both the procedure and general feedback
+            regarding the test.
+          </p>
+        </div>
+      </section>
+    </div>
+    <section class="contact-us">
+      <div class="extra-large"><i class="fas fa-dice"></i></div>
+      <h2>Contact us</h2>
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">Name</label>
+          <input type="text" id="Name" name="Name" placeholder="Your name" />
 
-    <!-- Boardgame video 
-    Video by RODNAE Productions from Pexels -->
+          <label for="lname">Company</label>
+          <input
+            type="text"
+            id="lname"
+            name="company name"
+            placeholder="Your company name"
+          />
+
+          <label for="country">Is your game physical or digital?</label>
+          <select id="country" name="country">
+            <option value="australia">
+              Physical game (Board games, card games, dice games)
+            </option>
+            <option value="canada">
+              Digital game (FPS, MMOB, Tower defence)
+            </option>
+          </select>
+
+          <label for="subject">Tell us more about your game!</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <footer>
+      <script src="script.js" defer></script>
+    </footer>
   </body>
 </html>
